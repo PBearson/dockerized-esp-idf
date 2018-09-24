@@ -1,4 +1,4 @@
-# ESP-IDF-SDK #
+# Dockerized ESP-IDF #
 
 This repository contains a prebuilt Docker image that has already installed the necessary dependencies for the ESP-IDF software development kit, provided by Espressif Systems. For instructions on how to use the SDK itself, please refer to the ESP-IDF Programming Guide: https://docs.espressif.com/projects/esp-idf/en/latest/index.html
 
