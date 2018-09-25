@@ -1,7 +1,12 @@
 # Simply run this script to get your container up and running :)
 
-docker build . --tag esp-idf-sdk
-docker kill esp-idf 2>/dev/null
-docker rm esp-idf 2>/dev/null
+
+IMAGE_NAME="esp-idf-sdk"
+CONTAINER_NAME="esp-idf"
+DEVICE_PORT="/dev/ttyUSB0"
+
+docker build . --tag $IMAGE_NAME
+docker kill $CONTAINER_NAME 2>/dev/null
+docker rm $CONTAINER_NAME 2>/dev/null
 printf '\nNow entering the container...\n'
-docker run -it --name esp-idf --device /dev/ttyUSB0 esp-idf-sdk:latest bash
+docker run -it --name $CONTAINER_NAME --device /dev/ttyUSB0 $IMAGE_NAME:latest bash
