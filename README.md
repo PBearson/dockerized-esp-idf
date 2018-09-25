@@ -13,4 +13,5 @@ Afterwards, simply run the "run.sh" file to build the Dockerfile, create a new c
 ### Notes ###
 
  - The script assumes that users will connect their devices to port /dev/ttyUSB0. Users should check which port is in use for their devices and change the script accordingly.
- - In addition, the image and container will be tagged "esp-idf-sdk" and "esp-idf", respectively, unless otherwise indicated in the script.
+ - The image and container will be tagged "esp-idf-sdk" and "esp-idf", respectively, unless otherwise indicated in the script.
+ - The image will mount a directory called "my-projects", which is intended to prevent loss of data when the container shuts down. Users should develop primarily inside this directory.
